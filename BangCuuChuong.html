@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    function bangcuuchuong()
+    {
+        document.write("<table border=1 width='100%' >")
+        for(i=1;i<=9;i++)
+        {
+            document.write("<tr>")
+            for(n=2;n<=9;n++)
+                document.write("<td>" +n + "x" + i +"="+ (n*i));
+            document.write("</td>");
+            document.write("</tr>")
+        }
+        document.write("</tr></table>")
+    }
+</script>
+<h1 align="center">Bảng cửu chương</h1>
+<button type="button" onclick="bangcuuchuong()" style="text-align: center; margin-left: 50%"> Xem</button>
+
+</body>
+</html>
